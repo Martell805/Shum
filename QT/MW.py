@@ -1,0 +1,96 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'QT\MW.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.2
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Starter(object):
+    def setupUi(self, Starter):
+        Starter.setObjectName("Starter")
+        Starter.resize(299, 205)
+        self.centralwidget = QtWidgets.QWidget(Starter)
+        self.centralwidget.setObjectName("centralwidget")
+        self.gridLayoutWidget_5 = QtWidgets.QWidget(self.centralwidget)
+        self.gridLayoutWidget_5.setGeometry(QtCore.QRect(0, 0, 291, 161))
+        self.gridLayoutWidget_5.setObjectName("gridLayoutWidget_5")
+        self.gridLayout_5 = QtWidgets.QGridLayout(self.gridLayoutWidget_5)
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_5.setObjectName("gridLayout_5")
+        self.label_2 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_2.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout_5.addWidget(self.label_2, 0, 0, 1, 1)
+        self.create_btn = QtWidgets.QPushButton(self.gridLayoutWidget_5)
+        self.create_btn.setObjectName("create_btn")
+        self.gridLayout_5.addWidget(self.create_btn, 3, 0, 1, 1)
+        self.gridLayout_4 = QtWidgets.QGridLayout()
+        self.gridLayout_4.setObjectName("gridLayout_4")
+        self.gridLayout_3 = QtWidgets.QGridLayout()
+        self.gridLayout_3.setObjectName("gridLayout_3")
+        self.n = QtWidgets.QSpinBox(self.gridLayoutWidget_5)
+        self.n.setMaximum(10000)
+        self.n.setSingleStep(10)
+        self.n.setProperty("value", 100)
+        self.n.setObjectName("n")
+        self.gridLayout_3.addWidget(self.n, 0, 0, 1, 1)
+        self.m = QtWidgets.QSpinBox(self.gridLayoutWidget_5)
+        self.m.setMaximum(10000)
+        self.m.setSingleStep(10)
+        self.m.setProperty("value", 100)
+        self.m.setObjectName("m")
+        self.gridLayout_3.addWidget(self.m, 1, 0, 1, 1)
+        self.wl = QtWidgets.QSpinBox(self.gridLayoutWidget_5)
+        self.wl.setMinimum(-255)
+        self.wl.setMaximum(255)
+        self.wl.setObjectName("wl")
+        self.gridLayout_3.addWidget(self.wl, 2, 0, 1, 1)
+        self.ts = QtWidgets.QSpinBox(self.gridLayoutWidget_5)
+        self.ts.setMaximum(100)
+        self.ts.setProperty("value", 10)
+        self.ts.setObjectName("ts")
+        self.gridLayout_3.addWidget(self.ts, 3, 0, 1, 1)
+        self.gridLayout_4.addLayout(self.gridLayout_3, 0, 0, 1, 1)
+        self.gridLayout = QtWidgets.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        self.label_4 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_4.setObjectName("label_4")
+        self.gridLayout.addWidget(self.label_4, 2, 0, 1, 1)
+        self.label = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.label_3 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 1, 0, 1, 1)
+        self.label_5 = QtWidgets.QLabel(self.gridLayoutWidget_5)
+        self.label_5.setObjectName("label_5")
+        self.gridLayout.addWidget(self.label_5, 3, 0, 1, 1)
+        self.gridLayout_4.addLayout(self.gridLayout, 0, 1, 1, 1)
+        self.gridLayout_5.addLayout(self.gridLayout_4, 2, 0, 1, 1)
+        Starter.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Starter)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 299, 21))
+        self.menubar.setObjectName("menubar")
+        Starter.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Starter)
+        self.statusbar.setObjectName("statusbar")
+        Starter.setStatusBar(self.statusbar)
+
+        self.retranslateUi(Starter)
+        QtCore.QMetaObject.connectSlotsByName(Starter)
+
+    def retranslateUi(self, Starter):
+        _translate = QtCore.QCoreApplication.translate
+        Starter.setWindowTitle(_translate("Starter", "Map Generator"))
+        self.label_2.setText(_translate("Starter", "Настройки генератора карты"))
+        self.create_btn.setText(_translate("Starter", "Создать"))
+        self.label_4.setText(_translate("Starter", "water_level"))
+        self.label.setText(_translate("Starter", "n"))
+        self.label_3.setText(_translate("Starter", "m"))
+        self.label_5.setText(_translate("Starter", "tilesize"))
