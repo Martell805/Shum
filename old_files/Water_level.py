@@ -1,5 +1,5 @@
 import pygame
-from map_working import *
+from utils.map_working import *
 from old_files.perl import gen_perlin_map
 
 

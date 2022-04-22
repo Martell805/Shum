@@ -1,6 +1,6 @@
 import random
 import pygame
-from map_working import *
+from utils.map_working import *
 
 
 TILESIZE = 10

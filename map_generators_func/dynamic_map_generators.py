@@ -1,5 +1,4 @@
-from map_working import *
-import math
+from utils.map_working import *
 import random
 
 

@@ -1,10 +1,8 @@
 import sys
-import os
-from PyQt5.QtWidgets import QApplication, QSpinBox
+from PyQt5.QtWidgets import QApplication
 from PyQt5.QtWidgets import QMainWindow
 from QT.MW import Ui_Starter
-from DynamicMain import dynamic_main
-from MAIN import main
+from old_mains.DynamicMain import dynamic_main
 
 
 # Это программа для удобного запуска

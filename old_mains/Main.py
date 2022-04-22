@@ -1,11 +1,7 @@
-from map_working import *
-import pygame
-from map_generators import *
-from drawers import *
-import argparse
+from map_generators_func.map_generators import *
+from drawers_func.drawers import *
 
-
-# Это осноная программа (если везде отвечать пустой строкой запустится самая удачная генерация (crater),
+# Это основная программа (если везде отвечать пустой строкой запустится самая удачная генерация (crater),
 # нормальная вода без показа векторов)
 
 

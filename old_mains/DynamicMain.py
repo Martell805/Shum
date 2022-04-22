@@ -1,7 +1,5 @@
-from map_working import *
-import pygame
-from dynamic_map_generators import *
-from drawers import *
+from map_generators_func.dynamic_map_generators import *
+from drawers_func.drawers import *
 
 
 # Это осноная программа

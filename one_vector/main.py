@@ -1,7 +1,5 @@
-from map_working import *
-import pygame
-from map_generators import *
-from drawers import *
+from map_generators_func.map_generators import *
+from drawers_func.drawers import *
 
 
 # Это программа, которая генерирует карту с 1м вектором
